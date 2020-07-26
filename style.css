@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'agency fb bold';
+  src: url(fonts/agencyfb-boldcondensed.ttf) ;
+}
+@font-face {
+  font-family: 'agency fb reg';
+  src: url(fonts/agencyfb-regularcondensed.ttf) ;
+}
+
+/* 
+  mira orange: #E5450A;
+  mira orange tint: #FF833D;
+  light teal: #73E5D8;
+  dark teal: #07AA9B;
+  dark grey: #505555;
+  light grey: #999;
+
+*/
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'EB Garamond', serif;
+	margin: 0;
+	font-size: 24px;
+	color: #505555;
+}
+h1, h2, h3 {
+  font-family: 'agency fb bold', arial;
+  color: #E5450A;
+}
+
+ h1 {
+ 	font-size: 36px;
+ }
+
+a { color: #E5450A; }
+a:hover { color: #07AA9B; }
+
+header, main, footer div {
+	max-width: 1024px;
+	padding: 20px;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px auto;
+}
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	margin:0;
+}
+nav li {
+	font-family: 'agency fb bold', arial;
+	padding-left: 20px;
+}
+nav a {
+	color: #505555;
+	text-decoration: none;
+}
+.logo { 
+	display: flex;
+	height:80px;
+	justify-content: flex-start;
+	width: 300px;
+	margin-left: -48px;
+}
+img {width: 100%;}
+.logo img { z-index: 0;}
+.logo .words { display: none;}
+
+.emphatic {
+	padding: 60px 20px;
+}
+hr {
+	margin-top: 80px;
+	color:#505555;
+	background:#505555;
+	height:1px;
+	border:none
+}
+
+footer {
+	background-color: #E5450A;
+	width: 100vw;
+	height: 120px;
+	padding: 20px;
+	color: #fff;
+	font-family: 'agency fb reg', arial;
+	font-size: 28px;
+}
+
+footer a {
+	color: #fff;
+}
+footer a:hover {
+	color: #73E5D8;
+}
+
+@media only screen and (min-width: 768px) {
+ .logo { 
+		display: flex;
+		height:100px;
+		justify-content: flex-start;
+		width: 400px;
+		margin-left: -48px;
+	}
+	.logo img { width: 100%; z-index: 0;}
+	.logo .words { display: block; margin-left: -118px; z-index: 1;}
+	nav ul {
+		flex-direction: row;
+	}
+	.emphatic {
+		padding: 120px;
+	}
+
+}
