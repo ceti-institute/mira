@@ -31,23 +31,30 @@ h1, h2, h3 {
   color: #E5450A;
 }
 
- h1 {
+ h1, h2 {
  	font-size: 36px;
+ 	text-transform: uppercase;
  }
 
 a { color: #E5450A; }
 a:hover { color: #07AA9B; }
 
-header, main, footer div {
-	max-width: 1024px;
+.header, .content-wrapper, footer div {
+	max-width: 960px;
 	padding: 20px;
 	margin: auto;
 }
 
-header {
+.header {
 	display: flex;
 	justify-content: space-between;
 	margin: 20px auto;
+}
+.hide {
+	display: none;
+}
+.whitespace {
+	padding-bottom: 120px;
 }
 nav ul {
 	list-style-type: none;
@@ -63,28 +70,57 @@ nav a {
 	color: #505555;
 	text-decoration: none;
 }
+nav a.active { color: #73E5D8; }
 .logo { 
-	display: flex;
 	height:80px;
-	justify-content: flex-start;
 	width: 300px;
-	margin-left: -48px;
+	margin-left: -24px;
+	margin-top: -110px;
 }
+
 img {width: 100%;}
-.logo img { z-index: 0;}
-.logo .words { display: none;}
 
 .emphatic {
 	padding: 60px 20px;
 }
 hr {
-	margin-top: 80px;
-	color:#505555;
-	background:#505555;
+	color:#999;
+	background:#999;
 	height:1px;
 	border:none
 }
 
+.teal-oj div.teal {
+	width: 100vw;
+	background-color: #07AA9B;
+}
+.teal-oj h2 {
+	color: white;
+}
+.oj {
+	background-color: #E95A25;
+	color: white;
+}
+.oj h3 {color: #fff;}
+
+.team {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 60px;
+	margin: 60px 0;
+}
+.team:nth-child(even) img{
+  grid-column: 2 / 3; 
+  grid-row: 1/2;
+}
+.team:nth-child(even) div {
+	grid-column: 1 / 2;
+	grid-row: 1/2;
+}
+.team h2 { display: inline; }
+
+.team p {margin-top: 0;}
+.team img {padding: 20px;}
 footer {
 	background-color: #E5450A;
 	width: 100vw;
@@ -104,15 +140,13 @@ footer a:hover {
 
 @media only screen and (min-width: 768px) {
  .logo { 
-		display: flex;
 		height:100px;
-		justify-content: flex-start;
 		width: 400px;
-		margin-left: -48px;
+		margin-top: -178px;
 	}
 	.logo img { width: 100%; z-index: 0;}
-	.logo .words { display: block; margin-left: -118px; z-index: 1;}
-	nav ul {
+/*	.logo .words { display: block; margin-left: -118px; z-index: 1;}
+*/	nav ul {
 		flex-direction: row;
 	}
 	.emphatic {
