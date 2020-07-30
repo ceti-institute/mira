@@ -29,6 +29,9 @@ body {
 	margin: 0;
 	font-size: 24px;
 	color: #505555;
+	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1, h2, h3 {
   font-family: 'agency fb bold', arial;
@@ -44,7 +47,7 @@ a { color: #E5450A; }
 a:hover { color: #07AA9B; }
 
 .header, .content-wrapper, footer div {
-	max-width: 960px;
+	max-width: 1024px;
 	padding: 20px;
 	margin: auto;
 }
@@ -57,7 +60,6 @@ a:hover { color: #07AA9B; }
 .mira {
 	font-family: 'agency fb bold', arial;
   color: #E5450A;
-  font-size: 28px;
 }
 .hide {
 	display: none;
@@ -93,12 +95,15 @@ img {width: 100%;}
 	padding: 60px 20px;
 }
 hr {
-	color:#999;
-	background:#999;
+	color:#E5E5E5;
+	background:#E5E5E5;
 	height:1px;
 	border:none
 }
 
+.space {
+	padding-top:60px;
+}
 .teal-oj div.teal {
 	width: 100vw;
 	background-color: #07AA9B;
@@ -111,7 +116,7 @@ hr {
 	color: white;
 }
 .oj h3 {color: #fff;}
-
+.oj-text {color: #E95A25;}
 .team {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -120,7 +125,7 @@ hr {
 .team h2 { display: inline; }
 
 .team p {margin-top: 0;}
-.team img {padding: 40px;}
+.team img {padding: 20px 100px;}
 footer {
 	background-color: #E5450A;
 	width: 100vw;
@@ -129,6 +134,7 @@ footer {
 	color: #fff;
 	font-family: 'agency fb reg', arial;
 	font-size: 28px;
+	margin-top: auto;
 }
 
 footer a {
@@ -155,7 +161,6 @@ footer a:hover {
 	.team {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 60px;
 	margin: 60px 0;
 }
 .team:nth-child(even) img{
