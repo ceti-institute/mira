@@ -1,10 +1,14 @@
 @font-face {
-  font-family: 'agency fb bold';
+  font-family: 'agency fb bold condensed';
   src: url(fonts/agencyfb-boldcondensed.ttf) ;
 }
 @font-face {
   font-family: 'agency fb reg';
   src: url(fonts/agencyfb-regularcondensed.ttf) ;
+}
+@font-face {
+  font-family: 'agency fb bold';
+  src: url(fonts/agencyfb-bold.otf) ;
 }
 
 /* 
@@ -49,6 +53,11 @@ a:hover { color: #07AA9B; }
 	display: flex;
 	justify-content: space-between;
 	margin: 20px auto;
+}
+.mira {
+	font-family: 'agency fb bold', arial;
+  color: #E5450A;
+  font-size: 28px;
 }
 .hide {
 	display: none;
