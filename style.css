@@ -36,6 +36,7 @@ body {
 h1, h2, h3 {
   font-family: 'agency fb bold', arial;
   color: #E5450A;
+  margin: 28px 0 10px 0;
 }
 
  h1, h2 {
@@ -46,9 +47,8 @@ h1, h2, h3 {
 a { color: #E5450A; }
 a:hover { color: #07AA9B; }
 
-
 .header, .content-wrapper, footer div {
-	max-width: 1024px;
+	max-width: 960px;
 	padding: 20px;
 	margin: auto;
 }
@@ -73,6 +73,9 @@ header hr {
 }
 .whitespace {
 	padding-bottom: 120px;
+}
+p.top-space {
+	margin-top: 28px;
 }
 nav ul {
 	list-style-type: none;
@@ -199,7 +202,7 @@ img { width: 100%; }
 
 p {
 	margin-top:0;
-	margin-bottom: 1em;
+	margin-bottom: 28px;
 }
 .emphatic {
 	padding: 60px 20px;
@@ -255,8 +258,14 @@ footer a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+ h1, h2, h3 {
+  margin: 42px 0 10px 0;
+}
+p.top-space {
+	margin-top: 42px;
+}
  .header {
-		margin-top: 30px;
+		margin-top: 20px;
  }
 	nav.main-nav{ display:block; }
 	nav.mobile-nav, .menu-mobile { display:none; }
@@ -277,9 +286,8 @@ footer a:hover {
 		margin-top: 26px;
 	}
 	.content-wrapper {
-		padding-right: 60px;
+		padding-right: 20px;
 	}
-	p:first-child { margin-top: 20px; }
 	.emphatic {
 		padding: 120px;
 	}
