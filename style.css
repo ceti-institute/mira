@@ -43,7 +43,9 @@ h1, h2, h3 {
  	font-size: 36px;
  	text-transform: uppercase;
  }
-
+h4 {
+	font-size: 28px;
+}
 a { color: #E5450A; }
 a:hover { color: #07AA9B; }
 
@@ -73,6 +75,13 @@ header hr {
 }
 .whitespace {
 	padding-bottom: 120px;
+}
+.whitespace-sm {
+	padding-bottom: 40px;
+}
+.center {text-align: center;}
+.callout {
+	padding: 60px 0;
 }
 p.top-space {
 	margin-top: 28px;
@@ -190,13 +199,8 @@ nav .menu-mobile li {
     justify-content: space-evenly;
 }
 
-
-
 /* END OF Mobile Menu */
 
-
-
-/* mobile nav */
 img { width: 100%; }
 .logo img {width: 80%;}
 
@@ -213,7 +217,19 @@ hr {
 	height:1px;
 	border:none
 }
-
+a.button {
+	padding: 14px 16px 10px 16px;
+	background-color: #07AA9B;
+	border: 2px solid #07AA9B;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'agency fb bold', arial;
+}
+a.button:hover {
+	color: #07AA9B;
+	background-color: #fff;
+}
 .space {
 	padding-top:60px;
 }
