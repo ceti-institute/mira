@@ -273,6 +273,71 @@ footer a:hover {
 	color: #73E5D8;
 }
 
+
+/* Slick Slides */
+.slider {
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 20px 60px;
+	border: 6px solid #505555;
+}
+.slick-prev:before, .slick-next:before {
+  color: #E5450A !important;
+}
+.slider img { width: 100%; }
+
+.slide-content {
+	display: grid;
+	grid-template-columns;
+	z-index: 2;
+}
+.slider button.slick-prev {
+	margin-left: -35px;
+}
+.slider button.slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 80px;
+  font-family: 'agency fb reg', arial;
+}
+.slider button.slick-next {
+	margin-right: -30px;
+}
+.slider button.slick-next:before {
+  content: ">";
+  color: red;
+  font-size: 80px;
+  font-family: 'agency fb reg', arial;
+}
+.slide-content .text-content {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.slide-content img {width: 100%;}
+.slide-content.orange-title {
+	text-align: center;
+}
+.slide-content.orange-title h1 {
+font-size: 144px;
+margin-top: 100px;
+}
+.slide-content.orange-title h2 {
+	color: #505555;
+	font-size:48px;
+	margin-top: 0;
+}
+
+.slick-dots { 
+	left: 0;
+	bottom: -35px;
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 90px;
+}
+/* end slick slides*/
+
 @media only screen and (min-width: 768px) {
  h1, h2, h3 {
   margin: 42px 0 10px 0;
