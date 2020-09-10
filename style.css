@@ -209,7 +209,7 @@ p {
 	margin-bottom: 28px;
 }
 .emphatic {
-	padding: 60px 20px;
+	padding: 20px 20px;
 }
 hr {
 	color:#E5E5E5;
@@ -370,7 +370,7 @@ p.top-space {
 		padding-right: 20px;
 	}
 	.emphatic {
-		padding: 120px;
+		padding: 80px;
 	}
 	.team {
 		display: grid;
