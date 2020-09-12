@@ -276,20 +276,21 @@ footer a:hover {
 
 /* Slick Slides */
 .slider {
-	width: 65%;
+	width: 75%;
 	margin: 0 auto;
 	margin-top: 20px;
-	padding: 20px 60px;
-	border: 6px solid #505555;
+	padding: 0;
+	border: none;
 }
+.slider h1, .slider h2 {
+  	font-size: 24px;
+	}
 .slick-prev:before, .slick-next:before {
   color: #E5450A !important;
 }
 .slider img { width: 100%; }
 
 .slide-content {
-	display: grid;
-	grid-template-columns;
 	z-index: 2;
 }
 .slider button.slick-prev {
@@ -311,8 +312,8 @@ footer a:hover {
   font-family: 'agency fb reg', arial;
 }
 .slide-content .text-content {
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .slide-content img {width: 100%;}
@@ -348,8 +349,7 @@ p.top-space {
  .header {
 		margin-top: 20px;
  }
-	nav.main-nav{ display:block; }
-	nav.mobile-nav, .menu-mobile { display:none; }
+	
  .logo { 
 		height:100px;
 		width: 400px;
@@ -386,4 +386,20 @@ p.top-space {
 		grid-row: 1/2;
 	}
 
+}
+@media only screen and (min-width: 1024px) {
+	nav.main-nav{ display:flex; }
+	nav.mobile-nav, .menu-mobile { display:none; }
+ 	.slider h1, .slider h2 {
+  	font-size: 36px;
+	}
+	.slider {
+		width: 65%;
+		padding: 20px 60px;
+		border: 6px solid #505555;
+	}
+	.slide-content .text-content {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 }
